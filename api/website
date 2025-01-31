@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Opera GX Replica</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0d0d0d;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Background Animation */
+    @keyframes moveBackground {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(45deg, #d90000, #ff0000, #960000);
+      background-size: 300% 300%;
+      animation: moveBackground 10s ease infinite;
+      z-index: -1;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #2b2b2b;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar img {
+      width: 50px;
+    }
+
+    .navbar .menu-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .navbar .menu-links a:hover {
+      color: #ff0000;
+    }
+
+    /* Main Content Area */
+    .main-container {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      height: calc(100vh - 100px);
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: #2f2f2f;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .sidebar h2 {
+      color: #ff0000;
+      font-size: 20px;
+    }
+
+    .sidebar ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    .sidebar ul li {
+      padding: 10px 0;
+      color: #aaa;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      color: white;
+    }
+
+    /* Content Area */
+    .content {
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+    .content h1 {
+      font-size: 2rem;
+    }
+
+    /* Footer */
+    .footer {
+      background: #222;
+      padding: 10px;
+      color: #aaa;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 10px 20px;
+      background-color: #ff0000;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #d90000;
+    }
+
+    /* GX Control Settings */
+    .gx-control {
+      margin-top: 30px;
+    }
+
+    .gx-control h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ff0000;
+    }
+
+    .gx-control .slider {
+      width: 100%;
+      height: 8px;
+      background-color: #444;
+      border-radius: 5px;
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    .gx-control .slider input {
+      width: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      height: 8px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Background Animation -->
+  <div class="background"></div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Opera_logo_2015.svg/1200px-Opera_logo_2015.svg.png" alt="Opera Logo">
+    <div class="menu-links">
+      <a href="#">Menu</a>
+      <a href="#">Settings</a>
+      <a href="#">Extensions</a>
+      <a href="#">Themes</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>GX Control</h2>
+      <ul>
+        <li>CPU Limiter</li>
+        <li>RAM Limiter</li>
+        <li>Network Limiter</li>
+        <li>GX Cleaner</li>
+      </ul>
+      <button class="btn">Activate GX Cleaner</button>
+
+      <div class="gx-control">
+        <h3>CPU Limiter</h3>
+        <div class="slider">
+          <input type="range" min="1" max="100" value="50">
+        </div>
+      </div>
+
+      <div class="gx-control">
+        <h3>RAM Limiter</h3>
+        <div class="slider">
+          <input type="range" min="1" max="100" value="50">
+        </div>
+      </div>
+
+      <div class="gx-control">
+        <h3>Network Limiter</h3>
+        <div class="slider">
+          <input type="range" min="1" max="100" value="50">
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h1>Welcome to Opera GX</h1>
+      <p>This page is a visual replica of Opera GX's user interface. Feel free to explore the controls and design!</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>Opera GX Clone | 2025</p>
+  </div>
+
+</body>
+</html>
