@@ -121,49 +121,6 @@
       bottom: 0;
     }
 
-    /* Buttons */
-    .btn {
-      padding: 10px 20px;
-      background-color: #ff0000;
-      border: none;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .btn:hover {
-      background-color: #d90000;
-    }
-
-    /* GX Control Settings */
-    .gx-control {
-      margin-top: 30px;
-    }
-
-    .gx-control h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #ff0000;
-    }
-
-    .gx-control .slider {
-      width: 100%;
-      height: 8px;
-      background-color: #444;
-      border-radius: 5px;
-      margin: 10px 0;
-      cursor: pointer;
-    }
-
-    .gx-control .slider input {
-      width: 100%;
-      background: none;
-      border: none;
-      outline: none;
-      height: 8px;
-      cursor: pointer;
-    }
-
   </style>
 </head>
 <body>
@@ -192,34 +149,12 @@
         <li>Network Limiter</li>
         <li>GX Cleaner</li>
       </ul>
-      <button class="btn">Activate GX Cleaner</button>
-
-      <div class="gx-control">
-        <h3>CPU Limiter</h3>
-        <div class="slider">
-          <input type="range" min="1" max="100" value="50">
-        </div>
-      </div>
-
-      <div class="gx-control">
-        <h3>RAM Limiter</h3>
-        <div class="slider">
-          <input type="range" min="1" max="100" value="50">
-        </div>
-      </div>
-
-      <div class="gx-control">
-        <h3>Network Limiter</h3>
-        <div class="slider">
-          <input type="range" min="1" max="100" value="50">
-        </div>
-      </div>
     </div>
 
     <!-- Main Content -->
     <div class="content">
       <h1>Welcome to Opera GX</h1>
-      <p>This page is a visual replica of Opera GX's user interface. Feel free to explore the controls and design!</p>
+      <p>This page is a visual replica of Opera GX's user interface. It focuses purely on design without interactive elements.</p>
     </div>
   </div>
 
